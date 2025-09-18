@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Mi</title>
+    <script src="translate.js"></script>
+    <link rel="icon" href="./assets/emoji-icon.png" type="image/png" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="idioma-botones">
+      <button onclick="changeLanguage('about', 'es')">Español</button>
+      <button onclick="changeLanguage('about', 'en')">English</button>
+    </div>
+
+    <header class="header">
+      <nav class="header__menu">
+        <a class="header__menu__link" href="index.html">Home</a>
+        <a id="navAbout" class="header__menu__link" href="about.html"
+          >Sobre mi</a
+        >
+        <a id="navResume" class="header__menu__link" href="curriculum.html"
+          >Curriculum</a
+        >
+      </nav>
+    </header>
+
+    <main class="presentacion">
+      <section class="presentacion__contenido">
+        <h1 id="titleAbout" class="presentacion__contenido__titulo">
+          Sobre Mi:
+          <strong class="titulo-destaque">
+            Diseño con el corazón, programo con propósito.</strong
+          >
+        </h1>
+        <p id="whoIam" class="presentacion__contenido__texto">
+          Tengo 28 años y soy técnica profesional en diseño gráfico. Domino
+          herramientas como Illustrator y Photoshop, y actualmente estoy
+          expandiendo mi universo creativo aprendiendo programación en Alura
+          Latam.
+        </p>
+
+        <p id="whoIamTwo" class="presentacion__contenido__texto">
+          Estoy explorando HTML, CSS y JavaScript para crear páginas web que
+          sean funcionales, accesibles y visualmente armoniosas. Me interesa
+          unir arte, tecnología y empatía en cada proyecto.
+        </p>
+      </section>
+      <img src="./assets/imagen.png" alt="Gabriela trabajando" />
+    </main>
+
+    <footer class="footer">
+      <p id="footerTranslate">Desarrollado por Gabriela</p>
+    </footer>
+  </body>
+</html>

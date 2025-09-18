@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+:root {
+  --color-primario: #181a17;
+  --color-secundario: #ffffff;
+  --color-terciario: #5a9bf5;
+  --color--hover: #000000;
+
+  --fuente-montserrat: "Montserrat", sans-serif;
+  --fuente-krona: "Krona One", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--color-primario);
+  color: var(--color-secundario);
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 2% 0% 0% 15%; /* padding top es2% , padding right 0% , padding bottom 0% padding left 80%  */
+}
+
+.header__menu {
+  display: flex;
+  gap: 80px; /* espacio entre el Home y Sobre mi*/
+}
+
+.header__menu__link {
+  font-family: var(--fuente-montserrat);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-terciario);
+  text-decoration: none;
+}
+/* botones de la traduccion */
+button {
+  margin: 6px;
+  padding: 8px 16px;
+  font-family: var(--fuente-krona);
+  background-color: var(--color-terciario);
+  border: none;
+  cursor: pointer;
+}
+
+.idioma-botones {
+  display: flex;
+  justify-content: flex-end; /* Alinea a la derecha */
+  gap: 10px; /* Espacio entre botones */
+  padding: 10px 20px; /* Espaciado interno */
+}
+
+.presentacion {
+  display: flex;
+  align-items: center;
+  padding: 6% 10%;
+  justify-content: space-between;
+  gap: 82px;
+}
+
+.presentacion__contenido {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.presentacion__contenido__titulo {
+  font-size: 2.25rem;
+  font-family: var(--fuente-krona);
+}
+
+.titulo-destaque {
+  color: var(--color-terciario);
+}
+
+.presentacion__contenido__texto {
+  font-size: 1.5rem;
+  font-family: var(--fuente-montserrat);
+}
+
+.presentacion__enlaces {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.presentacion__enlaces__subtitulo {
+  font-family: var(--fuente-krona);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.presentacion__enlaces__link {
+  width: 50%;
+  text-align: center;
+  padding: 21.5px 0;
+  border-radius: 10px;
+  font-family: var(--fuente-montserrat);
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-secundario);
+  border: 6px solid var(--color-terciario);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.presentacion__enlaces__link:hover {
+  background-color: var(--color--hover);
+  padding: 3%; /* Crea la ilusion de una animacion en los botones cuando pasa el raton*/
+}
+
+.presentacion__imagen {
+  width: 50%;
+}
+
+.footer {
+  background-color: var(--color-terciario);
+  padding: 24px;
+  color: var(--color-primario);
+  text-align: center;
+  font-family: var(--fuente-montserrat);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* El siguiente es solo una adiccion para html de curriculum es para el link de certificado*/
+.presentacion__contenido__texto a {
+  text-decoration: none;
+  color: var(--color-terciario);
+}
+
+/* hasta aqui llega para el html de curriculum*/
+
+@media (max-width: 1200px) {
+  /* hacer responsive a la pagina web */
+
+  .header {
+    padding: 10%; /* darle un espacio al encabezado*/
+  }
+
+  .header__menu {
+    /* hacer responsive al menu de home,sobremi,curriculum, como ya tiene un display flex se hace con lo siguiente*/
+    justify-content: center;
+  }
+
+  .presentacion {
+    flex-direction: column-reverse; /* hace que la imagen este de primero al ser responsive*/
+    padding: 5%; /* para que no se vea todo apachurrado al disminuir la pantalla*/
+  }
+
+  .presentacion__contenido {
+    width: auto; /* arregla el problema del padding del 5% que pusimos en presentacion y la pagina se adapta al elemento padre*/
+  }
+}

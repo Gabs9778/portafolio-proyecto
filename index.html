@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es-co">
+  <head>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio</title>
+    <script src="translate.js"></script>
+    <link rel="icon" href="./assets/emoji-icon.png" type="image/png" />
+  </head>
+
+  <body>
+    <div class="idioma-botones">
+      <button onclick="changeLanguage('home', 'es')">Español</button>
+      <button onclick="changeLanguage('home', 'en')">English</button>
+    </div>
+
+    <header class="header">
+      <nav class="header__menu">
+        <a class="header__menu__link" href="index.html">Home</a>
+        <a id="navAbout" class="header__menu__link" href="about.html"
+          >Sobre mi</a
+        >
+        <a id="navResume" class="header__menu__link" href="curriculum.html"
+          >Curriculum</a
+        >
+      </nav>
+    </header>
+    <main class="presentacion">
+      <section class="presentacion__contenido">
+        <h1 id="welcome" class="presentacion__contenido__titulo">
+          ¡Hola! soy Gabriela
+          <strong class="titulo-destaque"
+            >Escucho tus necesidades y las transformo en soluciones
+            visuales.</strong
+          >
+        </h1>
+
+        <p id="aboutMe" class="presentacion__contenido__texto">
+          Diseñadora gráfica y aprendiz de programación. Me apasiona crear
+          experiencias visuales que conecten con las personas. Bienvenida/o a mi
+          portafolio.
+        </p>
+
+        <div class="presentacion__enlaces">
+          <h1 id="socialTitle" class="presentacion__enlaces__subtitulo">
+            Accede a mis redes
+          </h1>
+          <a
+            class="presentacion__enlaces__link"
+            href="https://www.linkedin.com/in/gabrielamu%C3%B1ozm/"
+            target="_blank"
+          >
+            <img src="./assets/linkedin-blue.png" alt="" />
+            Linkedin</a
+          >
+          <a
+            class="presentacion__enlaces__link"
+            href="https://github.com/Gabs9778"
+            target="_blank"
+          >
+            <img src="./assets/github-blue.png" alt="" />
+            Github</a
+          >
+
+          <a
+            class="presentacion__enlaces__link"
+            href="https://www.behance.net/montecreature/"
+            target="_blank"
+          >
+            <img src="./assets/behance-blue.png" alt="" />
+            Behance</a
+          >
+        </div>
+      </section>
+      <img src="./assets/imagen.png" alt="Gabriela trabajando" />
+    </main>
+    <footer class="footer">
+      <p id="footerTranslate">Desarrollado por Gabriela</p>
+    </footer>
+  </body>
+</html>
